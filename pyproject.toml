@@ -8,6 +8,10 @@ requires-python = ">=3.12"
 
 dependencies = ["torch>=2.4", "numpy>=1.26", "pyyaml>=6.0", "einops>=0.8"]
 
+[project.scripts]
+hbs-train = "hbs.scripts.train:main"
+hbs-generate = "hbs.scripts.generate:main"
+
 [project.optional-dependencies]
 dev = ["pytest>=8.0", "pytest-cov>=5.0", "ruff>=0.5", "mypy>=1.10"]
 web = ["gradio>=4.0"]
